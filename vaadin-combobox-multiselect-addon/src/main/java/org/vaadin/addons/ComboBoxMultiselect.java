@@ -894,7 +894,6 @@ public class ComboBoxMultiselect<T> extends AbstractMultiSelect<T>
 
         fireEvent(new MultiSelectionEvent<>(this, oldSelection, userOriginated));
 
-        getDataCommunicator().reset();
         getDataProvider().refreshAll();
     }
 
